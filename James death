@@ -1,0 +1,100 @@
+import time
+
+def onebyone(sentence) :
+    for word in sentence:
+        print(word, end='')
+        time.sleep(0.05)
+    print()
+
+def dead():
+    onebyone ('1 = Go to school next day and ask Max, Presley, and Ethan  about the problem.')
+    onebyone ('2 = You ask the manager at the bar what happened.')
+    
+    answer3 = input()
+
+    if answer3 == '1':
+        onebyone("""They all said that they didn't know. However, you knew that one of them did it.
+         Besides, why would a random person want to kill him? One part that Presley said stood out to you.
+           He said,\" I don't know man, but one thing I know is that we don't remember because we were drunk last night.
+              We somehow didn't get caught for being under 19.\" """)
+    if answer3 == '2':   
+        onebyone("""You go up to the manager if someone went to the bathroom at night yesterday. 
+         The manager replied,\" I did see a person, but first of all, you don't look 19. Show me your passport and ID.\"
+          You knew you were cooked, so you ran, but soon caught by the police. 
+           You had to serve 2 days for community, pay a 250$ fine, and get a 1 year driver licence suspension. 
+            You knew your future was gone (which wasn't), so you commited suicide. """)
+        
+        onebyone('GAME OVER')
+    
+        respawn = input("Would you like to start over? \n YES or NO\n")
+        if respawn == 'YES' or respawn == 'y' or respawn =='yes' or respawn =='Yes':
+            return 'restart'
+        else:
+            return 'gameover'
+
+    onebyone ('1 = Go to the bar again to risk it and go  ')
+    
+
+    
+
+    
+
+
+        
+
+
+
+while True:
+    onebyone('''Game start 
+    One day, your best friend,James, dies.
+    You ask other friends after school what happened. 
+    60% of your friends say that there was a bomb inside his bag. 
+    However, the 20% said they didn't know, and the last 20% said that they saw someone put the bomb inside the bag during recess.
+
+    1 = go to the bag yourself and try to find evidence.
+    2 = Ask James' mother where and who James was with last night.
+    ''')
+    answer = input()
+
+    if answer == '1' :
+        onebyone("You go into dig into his bag and BOOM! Another bomb was hidden inside the bag and killed you.\n")
+        onebyone('GAME OVER')
+        respawn = input("Would you like to start over? \n YES or NO\n")
+        if respawn == 'YES' or respawn == 'y' or respawn =='yes' or respawn =='Yes':
+            continue
+        else:
+            break
+
+    elif answer == '2' :
+        onebyone("""James' mom tells you that he was in the basketball court  hanging out with his friends, Max, Presley, and Ethan.
+        However, your friends told you that they were going out to the bar, so you realized that James lied to his mom. """)
+        onebyone  ('1 = Go investigate in the bar and find more evidence yourself.')
+
+        onebyone('2 = Ask James\' mom for more evidence.')
+
+        answer2 = input()
+
+        if answer2 == '1':
+            onebyone("""You go to the bar and find a dead body in the bathroom. 
+            The corpse was stabbed in its chest with a knife.
+              There was a card next to the corpse, reading R.I.P James.
+             """)
+
+            result = dead()
+            if result == 'restart':
+                continue
+            else:
+                break
+
+        elif answer2 == '2':
+            onebyone("""James\' mother asked,\" why?\" You reply, \" James died.\" 
+            Hearing the sad news, James' mother kicked you out of her house.""")
+
+            onebyone('GAME OVER')
+            respawn = input("Would you like to start over? \n YES or NO\n")
+            if respawn == 'YES' or respawn == 'y' or respawn =='yes' or respawn =='Yes':
+                continue
+            else:
+                break
+
+
