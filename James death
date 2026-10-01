@@ -1,5 +1,6 @@
 import time
 
+inventory = []
 def onebyone(sentence) :
     for word in sentence:
         print(word, end='')
@@ -32,8 +33,40 @@ def dead():
         else:
             return 'gameover'
 
-    onebyone ('1 = Go to the bar again to risk it and go  ')
-    
+    onebyone ('1 = Go to the bar again to risk it and go to the security office to find the camera footage. (Ask for footage)  ')
+    onebyone ('2 = Go to the bar to find footage. (Fight for footage, hey, what if the guard says no?)')
+
+    answer4 = input()
+
+    if answer4 == '1':
+        onebyone("""You made the right decision. The officers didn't ask you for your age and said that you can take a look. 
+        You squint your eyes and see a hairline that definetly belongs to Presley or Ethan. 
+        You take photos and videos about what you have. """)
+
+        inventory.append('video of hairline')
+        print("inventory:", inventory)
+
+        inventory.append('video of going into bathroom')
+        print("inventory:", inventory)
+                
+        inventory.append('picture of bar')
+        print("inventory:", inventory)
+
+    elif answer4 == '2':
+        onebyone("""When you fought the security officers, you at first thought you could beat them because of your jujutsu skills.
+        However, soon did you realize that there were too many of them and they were all too strong for you to face. 
+        Eventually, you run out of stamina and died. """)
+
+         onebyone('GAME OVER')
+            
+                respawn = input("Would you like to start over? \n YES or NO\n")
+                if respawn == 'YES' or respawn == 'y' or respawn =='yes' or respawn =='Yes':
+                    return 'restart'
+                else:
+                    return 'gameover'
+
+                
+
 
     
 
