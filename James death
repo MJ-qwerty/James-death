@@ -57,23 +57,24 @@ def dead():
         However, soon did you realize that there were too many of them and they were all too strong for you to face. 
         Eventually, you run out of stamina and died. """)
 
-         onebyone('GAME OVER')
+        onebyone('GAME OVER')
             
-                respawn = input("Would you like to start over? \n YES or NO\n")
-                if respawn == 'YES' or respawn == 'y' or respawn =='yes' or respawn =='Yes':
-                    return 'restart'
-                else:
-                    return 'gameover'
+        respawn = input("Would you like to start over? \n YES or NO\n")
+        if respawn == 'YES' or respawn == 'y' or respawn =='yes' or respawn =='Yes':
+            return 'restart'
+        else:
+            return 'gameover'
 
-                
+    onebyone ('1 = You ask Preley or Ethan if one of them had killed James.')
+    onebyone ('2 = You show the footage of your videos and photos.')
 
+answer5 = input()
 
-    
-
-    
-
-
-        
+if answer == '1':
+    onebyone("""You ask them and Presley said,\"Why the f*ck would we kill James bro? We're his best friend.
+     We would never do that idiot. Are you stupid, that looks that Jonathan's hairline!" Then you realize, it looks
+     just like Jonathan's )hairline. 
+                  
 
 
 
