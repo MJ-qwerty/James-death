@@ -8,7 +8,7 @@ def onebyone(sentence) :
     print()
 
 def dead():
-    onebyone ('1 = Go to school next day and ask Max, Presley, and Ethan  about the problem.')
+    onebyone ('1 = Go to school next day and ask David, Presley, and Ethan  about the problem.')
     onebyone ('2 = You ask the manager at the bar what happened.')
     
     answer3 = input()
@@ -65,15 +65,69 @@ def dead():
         else:
             return 'gameover'
 
-    onebyone ('1 = You ask Preley or Ethan if one of them had killed James.')
+    onebyone ('1 = You ask Preley, Ethan, or David if one of them had killed James.')
     onebyone ('2 = You show the footage of your videos and photos.')
 
-answer5 = input()
+    answer5 = input()
 
-if answer == '1':
-    onebyone("""You ask them and Presley said,\"Why the f*ck would we kill James bro? We're his best friend.
-     We would never do that idiot. Are you stupid, that looks that Jonathan's hairline!" Then you realize, it looks
-     just like Jonathan's )hairline. 
+    if answer5 == '1':
+        onebyone("""You ask them and Presley said,\"Why the f*ck would we kill James bro? We're his best friend.
+        We would never do that idiot. Are you stupid, that looks that Jonathan's hairline!" Then you realize, it looks
+        just like Jonathan's hairline.""")
+
+    elif answer5 == '2':
+        onebyone("""When you show them the image, Ethan says,\"Bro, really, you thought we would have killed James?
+        You're not a true friend are you? Guys, he doesn't deserve to be our friend.\" Now, you are alone, without any friends. 
+        Without your friends to support you, you stop your investigation.""")
+
+        onebyone('GAME OVER')
+                    
+        respawn = input("Would you like to start over? \n YES or NO\n")
+        if respawn == 'YES' or respawn == 'y' or respawn =='yes' or respawn =='Yes':
+            return 'restart'
+        else:
+            return 'gameover'
+    
+
+    onebyone ("""1 = You realize that the handwriting of the card that lay next James\' corpse was Jonathan\'s handwriting, 
+    so you go to the bar, pick up the card, and show it to him.""")
+
+    onebyone ("""2 = You realize that the handwriting of the card that lay next James\' corpse was Jonathan\'s handwriting, 
+     so you confront James after school.""" )
+
+    answer6 = input()
+    if answer6  == '1':
+        onebyone("""You show the card to Jonathan, and ask fists clenched,
+                                \"Yo did you kill my best friend?\"
+                            He replied,\" Okok, I wrote the letter, but I didn't kill him, I swear.\"
+                            \"You son of a b*tch, I know it was you.\" 
+                               \"No, no I swear on my life!\"
+                            \"Ok then who was it? Tell me.\"
+                            \" It's a long story, but to summarize, mine and your friend group had a fight
+                            while we were drunk. I drank the least alchohol so from what I remember, 
+                                 James beat up Gabriel really hard, but then, someone, which I don't remember,
+                                dragged him into the bathroom and then, when I later had to use it, there was
+                                James' corpse. So before the cops came, I hid his body in my house.\" 
+                                \"Oh, so it's that f*cking Gabriel, ok.\"
+                            \"Hey hey, I'm not so sure, ok?\" """)
+    if answer6 == '2': 
+        onebyone(""" You meet Jonathan at teh end of school, and you beat him up, assuming that he was the 
+        one who killed James. However, he punches you back, saying, 
+                    \"What is your problem?\" 
+                    You say, \"I know it was you, you killed James.\"
+                      He said back, \" Bro what? Guys get him!\"
+            You realized that because you assumed that he killed James, that made him more irritated, 
+            which led to him killing you.""")
+
+    onebyone('GAME OVER')
+                    
+    respawn = input("Would you like to start over? \n YES or NO\n")
+    if respawn == 'YES' or respawn == 'y' or respawn =='yes' or respawn =='Yes':
+            return 'restart'
+    else:
+            return 'gameover'
+    
+        
                   
 
 
@@ -100,7 +154,7 @@ while True:
             break
 
     elif answer == '2' :
-        onebyone("""James' mom tells you that he was in the basketball court  hanging out with his friends, Max, Presley, and Ethan.
+        onebyone("""James' mom tells you that he was in the basketball court  hanging out with his friends, David, Presley, and Ethan.
         However, your friends told you that they were going out to the bar, so you realized that James lied to his mom. """)
         onebyone  ('1 = Go investigate in the bar and find more evidence yourself.')
 
