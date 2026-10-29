@@ -119,16 +119,53 @@ def dead():
             You realized that because you assumed that he killed James, that made him more irritated, 
             which led to him killing you.""")
 
-    onebyone('GAME OVER')
+        onebyone('GAME OVER')
                     
-    respawn = input("Would you like to start over? \n YES or NO\n")
-    if respawn == 'YES' or respawn == 'y' or respawn =='yes' or respawn =='Yes':
+        respawn = input("Would you like to start over? \n YES or NO\n")
+        if respawn == 'YES' or respawn == 'y' or respawn =='yes' or respawn =='Yes':
             return 'restart'
-    else:
+        else:
             return 'gameover'
     
-        
-                  
+    onebyone('''You just go straight up to confront Gabriel ''')
+    onebyone(''' You ask Jonathan for more information ''')
+
+    answer7 = input()
+    if answer7 == '1':
+        print('''You go up to Gabriel and say,\"Bro you got a problem with James?\"
+                                          Gabriel replies,\"Get of be b*tch.\"
+                                             \"I know it was you, you killed James!\"
+                                     \"Bro what are you talking about? I only put a bomb inside his bag!\"
+                                     \" I know and that's why James died!"
+                                     \" Bro you dumb? He was killed by a knife, so it wasn't me!\"
+                                     \" Ohh my bad bro! Was there something inside the bag?\"
+                                \" Yeah?? There was like a weird notebook.\"
+                                             \" Okay thanks!\"
+                                     \" NO THANK YOU B*TCH\" ''')
+    if answer7 == '2'
+        print('''You ask Jonathan more information, and he pushes you back saying,\" No more idiot.\" However, when you
+        ask for more, he says by punching you saying,\" ENOUGH IS ENOUGH!\" Then, your eyes start to close, as you face a black-out.''')
+        onebyone('GAME OVER')
+                                        
+    respawn = input("Would you like to start over? \n YES or NO\n")
+    if respawn == 'YES' or respawn == 'y' or respawn =='yes' or respawn =='Yes':
+        return 'restart'
+    else:
+        return 'gameover'
+
+onebyone('''You get bomb defuser spray to look inside the bag''' )
+onebyone('''You get bomb defuser sticker to look inside the bag''')
+
+answer8 = input()
+if answer8 == '1':
+    print('''You get a bomb defuser spray with Ethan, but when Ethan was joking around with you about whether to spray it to
+     you or not, you push him, and he accidentally sprayed it to your face. The pain strikes you as your vision fades and you  
+     soon pass out. ''')
+
+if answer8 == '2':
+    print('''You get the bomb defuser sticker with Ethan, and you put it on the bomb inside James' bag. Then, you take the 
+    bomb out and inside the bag a notebook, which said,\"Calm Down David\" You open the notebook and found that since James
+    got MVP, David got jealous and decided to murder him. You say to yourself,\" F*ck you David. Your a*s is cooked now.\" ''')
 
 
 
